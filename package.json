@@ -1,0 +1,27 @@
+{
+  "name": "USVets-Standard-Operations-Bot",
+  "version": "1.0.10",
+  "description": "",
+  "main": "SOB.js",
+  "scripts": {
+    "start": "node SOB.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgtstartpushin/USVets-Standard-Operations-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgtstartpushin/USVets-Standard-Operations-Bot/issues"
+  },
+  "homepage": "https://github.com/sgtstartpushin/USVets-Standard-Operations-Bot#readme",
+  "dependencies": {
+    "discord.js": "11.3.2",
+    "express-glitch-keepalive": "^0.2.0",
+    "expres": "^0.0.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {}
+}
