@@ -63,12 +63,6 @@ client.on("guildMemberAdd", member => {
   // member.addRole(role);
 });
 
-
-
-
-
-
-
 // Actual start of code for bot commands
 client.on("message", async message => {
   if (message.author.bot) return;
@@ -80,17 +74,6 @@ client.on("message", async message => {
     .trim()
     .split(/ +/g);
   const command = args.shift().toLowerCase();
-  
-  //image placeholder
-  
-  if (message.content.startsWith ("Z1")) {
-    
-    message.channel.send ("@Commanders Z1 is Dead!", {Files:["./Images/z1.png"]})};
-  
-  
-  
-  
-  
 
   // bot code for sops
 
@@ -114,17 +97,14 @@ client.on("message", async message => {
         .addField("!rt", "will open the royal tribunal sop")
         .addField("!sd", "will open the staff duties sop")
         .addField("!zombies", "will open the zombies sop")
-        .addBlankField()
+        .addField("!z_", "will inform command that zombie is dead. Replace _ with the number of zombie.")
         .addField(
           "!intel",
           "will open the directions on use of the intel form and calculator spreadsheet."
         )
-        .addBlankField()
+        .addField("!academy", "Will inform everyone that a new academy has opened")
 
-        .addField(
-          "***Note***",
-          "If an sop needs to be updated or revised please send approved, revised sop in DM to Tango71#0001"
-        )
+        
     );
     message.delete().catch(O_o => {});
   }
@@ -175,6 +155,76 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
 
+  //images  placeholder for zombies death
+
+  if (command === "z1") {
+       message.channel
+          .send(new Discord.Attachment("./Images/z1.png", "z1.png"))
+     message.channel.send('@Commanders Z1 Is Dead!')
+      .catch(console.error);
+   
+  }
+
+    if (command === "z2") {
+       message.channel
+          .send(new Discord.Attachment("./Images/z2.png", "z2.png"))
+     message.channel.send('@Commanders Z2 Is Dead!')
+      .catch(console.error);
+   
+  }
+     if (command === "z3") {
+       message.channel
+          .send(new Discord.Attachment("./Images/z3.png", "z3.png"))
+     message.channel.send('@Commanders Z3 Is Dead!')
+      .catch(console.error);
+   
+  }
+     if (command === "z4") {
+       message.channel
+          .send(new Discord.Attachment("./Images/z4.png", "z4.png"))
+     message.channel.send('@Commanders Z4 Is Dead!')
+      .catch(console.error);
+   
+  }
+  
+     if (command === "z5") {
+       message.channel
+          .send(new Discord.Attachment("./Images/z5.png", "z5.png"))
+     message.channel.send('@Commanders Z5 Is Dead!')
+      .catch(console.error);
+   
+  }
+     if (command === "z6") {
+       message.channel
+          .send(new Discord.Attachment("./Images/z6.png", "z6.png"))
+     message.channel.send('@Commanders Z6 Is Dead!')
+      .catch(console.error);
+   
+  }
+     if (command === "z7") {
+       message.channel
+          .send(new Discord.Attachment("./Images/z7.png", "z7.png"))
+     message.channel.send('@Commanders Z7 Is Dead!')
+      .catch(console.error);
+   
+  }
+     if (command === "z8") {
+       message.channel
+          .send(new Discord.Attachment("./Images/z8.png", "z8.png"))
+     message.channel.send('@Commanders Z8 Is Dead!')
+      .catch(console.error);
+   
+  }
+  // notice for academy
+     if (command === "academy") {
+       message.channel
+          .send(new Discord.Attachment("./Images/academy.png", "academy.png"))
+     message.channel.send('@everyone A New Academy is now Open!')
+      .catch(console.error);
+   
+  }
+  
+  
   //********************************START OF SOPS*******************************************
   //banquet sop
   if (command === "ban") {
