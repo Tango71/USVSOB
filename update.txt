@@ -1,0 +1,17 @@
+Update Major 19071101 Rev.A.
+
+-rewrote command list
+-fixed some minor bugs
+-wrote in zombie up system
+-changed images to coorellate with the game
+-reworked command lockout for officer commands
+-setup the construction notification system (50% complete)
+-re structured code for future major upgrade.
+-reworked help section.
+
+
+
+Time of start 0900 thursday november 7th
+expected duration time 1hour.
+Actual time of completion
+

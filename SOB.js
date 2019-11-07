@@ -41,7 +41,7 @@ client.on("guildDelete", guild => {
 
 client.on("guildMemberAdd", member => {
   member.guild.channels
-    .get("631519503410528258")
+    .get("515385002754572290") // 515385002754572290 recruiting office
     .send(
       `Welcome To USVets, ${member} You are In the Recruitment channel. Once approved, you will have access to our member area. As this is your first step, to speed up the process, please upload a copy of your DD214 or military ID with sensitive information blacked out. Allong with this, please include your Characters name and IDnumber. Once this is done, the commanders will review it and vote on it. Be advised this could take up to 3 days to complete.`
     );
@@ -63,12 +63,6 @@ client.on("guildMemberAdd", member => {
   // member.addRole(role);
 });
 
-
-
-
-
-
-
 // Actual start of code for bot commands
 client.on("message", async message => {
   if (message.author.bot) return;
@@ -80,104 +74,252 @@ client.on("message", async message => {
     .trim()
     .split(/ +/g);
   const command = args.shift().toLowerCase();
-  
-  //image placeholder
-  
-  if (message.content.startsWith ("Z1")) {
-    
-    message.channel.send ("@Commanders Z1 is Dead!", {Files:["./Images/z1.png"]})};
-  
-  
-  
-  
-  
 
   // bot code for sops
 
-  if (command === "help") {
-    message.author.send(
-      new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setTitle("***___Command list for Bot___***")
-        .setDescription("***___Help section for USVets SOPBOT___***")
-        .addField("!ban", "will open the banquet sop")
-        .addField("!Con", "will open the Construction sop")
-        .addField("!g1", "Will open the General Info sop")
-        .addField("!g2", "Will open the General Info sop")
-        .addField("!g3", "Will open the General Info sop")
-        .addField("!g4", "Will open the General Info sop")
-        .addField("!awol", "will open the AWOL & LOA sop")
-        .addField("!members", "will open the members & staff sop")
-        .addField("!kids", "will open the offspring sop")
-        .addField("!pa", "will open the personel activity sop")
-        .addField("!pg", "will open the ranking sop")
-        .addField("!rt", "will open the royal tribunal sop")
-        .addField("!sd", "will open the staff duties sop")
-        .addField("!zombies", "will open the zombies sop")
-        .addBlankField()
-        .addField(
-          "!intel",
-          "will open the directions on use of the intel form and calculator spreadsheet."
-        )
-        .addBlankField()
-
-        .addField(
-          "***Note***",
-          "If an sop needs to be updated or revised please send approved, revised sop in DM to Tango71#0001"
-        )
-    );
-    message.delete().catch(O_o => {});
-  }
-
+ if (command === "help") {
+    message.author.send(new Discord.Attachment("./help.txt", "help.txt"));
+    message.author.send("Due to The amount of commands, The command list is now only available for download.").catch(console.error);
+   message.delete().catch(O_o => {});
+ }
+ 
   if (command === "commandershelp") {
-    message.author.send(
-      new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setTitle("***___Command list for USVets Command___***")
-        .setDescription(
-          "***___This Covers all Command for server moderators and administrators___***"
-        )
-        .addField(
-          "!usvsay",
-          "This command will allow you to appear as though you are speaking as the server bot."
-        )
-        .addField(
-          "!latencyping",
-          "This will ping the server to check the latency(if you have no idea what this is dont use it.)"
-        )
-        .addField("!usvkick", "This Kicks a player from the server.")
-        .addField(
-          "!usvban",
-          "This command bans a member(must be a server admin to use)"
-        )
-        .addField(
-          "!usvd",
-          "deletes messages in the channel up to 100 must be less than 14 days old"
-        )
-        //      .addField("!", "")
-        //      .addField("!", "")
-        //      .addField("!", "")
-        //      .addField("!", "")
-        //      .addField("!", "")
-        //      .addField("!", "")
-        //      .addField("!", "")
-        //      .addField("!", "")
-        //      .addField("!", "")
-        .addBlankField()
-        //    .addField("!intel", "will open the directions on use of the intel form and calculator spreadsheet.")
-        .addBlankField()
+    message.author.send(new Discord.Attachment("./commandershelp.txt", "commandershelp.txt"));
+    message.author.send("Due to The amount of commands, The command list is now only available for download.").catch(console.error);
+   message.delete().catch(O_o => {});
+ }
+ 
 
-        .addField(
-          "***Note***",
-          "If an sop needs to be updated or revised please send approved, revised sop in DM to Tango71#0001"
-        )
-    );
-    message.delete().catch(O_o => {});
+
+
+
+  //images  placeholder for zombies opened
+
+  if (command === "z1u") {
+    message.channel.send(new Discord.Attachment("./Images/z1u.jpg", "z1du.jpg"));
+    message.channel.send("@everyone Z1 Is Up!").catch(console.error);
+   message.delete().catch(O_o => {});
   }
 
+  if (command === "z2u") {
+    message.channel.send(new Discord.Attachment("./Images/z2u.jpg", "z2u.jpg"));
+    message.channel.send("@everyone Z2 Is Up!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z3u") {
+    message.channel.send(new Discord.Attachment("./Images/z3u.jpg", "z3u.jpg"));
+    message.channel.send("@everyone Z3 Is Up!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z4u") {
+    message.channel.send(new Discord.Attachment("./Images/z4u.jpg", "z4u.jpg"));
+    message.channel.send("@everyone Z4 Is Up!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+
+  if (command === "z5u") {
+    message.channel.send(new Discord.Attachment("./Images/z5u.jpg", "z5u.jpg"));
+    message.channel.send("@everyone Z5 Is Up!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z6u") {
+    message.channel.send(new Discord.Attachment("./Images/z6u.png", "z6u.png"));
+    message.channel.send("@everyone Z6 Is Up!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z7u") {
+    message.channel.send(new Discord.Attachment("./Images/z7u.jpg", "z7u.jpg"));
+    message.channel.send("@everyone Z7 Is Up!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z8u") {
+    message.channel.send(new Discord.Attachment("./Images/z8u.jpg", "z8u.jpg"));
+    message.channel.send("@everyone Z8 Is Up!").catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+  
+
+
+
+
+  //images  placeholder for zombies death
+
+  if (command === "z1d") {
+    message.channel.send(new Discord.Attachment("./Images/z1d.jpg", "z1d.jpg"));
+    message.channel.send("<@&527578227582042113> Z1 Is Dead!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+
+  if (command === "z2d") {
+    message.channel.send(new Discord.Attachment("./Images/z2d.jpg", "z2d.jpg"));
+    message.channel.send("<@&527578227582042113> Z2 Is Dead!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z3d") {
+    message.channel.send(new Discord.Attachment("./Images/z3d.jpg", "z3d.jpg"));
+    message.channel.send("<@&527578227582042113> Z3 Is Dead!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z4d") {
+    message.channel.send(new Discord.Attachment("./Images/z4d.jpg", "z4d.jpg"));
+    message.channel.send("<@&527578227582042113> Z4 Is Dead!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+
+  if (command === "z5d") {
+    message.channel.send(new Discord.Attachment("./Images/z5d.jpg", "z5d.jpg"));
+    message.channel.send("<@&527578227582042113> Z5 Is Dead!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z6d") {
+    message.channel.send(new Discord.Attachment("./Images/z6d.png", "z6d.png"));
+    message.channel.send("<@&527578227582042113> Z6 Is Dead!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z7d") {
+    message.channel.send(new Discord.Attachment("./Images/z7d.jpg", "z7d.jpg"));
+    message.channel.send("<@&527578227582042113> Z7 Is Dead!").catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  if (command === "z8d") {
+    message.channel.send(new Discord.Attachment("./Images/z8d.jpg", "z8d.jpg"));
+    message.channel.send("<@&527578227582042113> Z8 Is Dead!").catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+  
+ // testing area 
+  if (command === "test1") {
+  //if .guild.members.roles.has(Commanders):
+  //  msg = '{}@Commanders, Z1 is Dead!'.format(role.mention)
+  message.channel.send(new Discord.Attachment("./Images/z8.png", "z8.png"));
+  //message.channel.send("<@&527578227582042113> Z8 Is Dead!").catch(console.error); //<@&527578227582042113> @Commanders
+     message.delete().catch(O_o => {});
+  }
+  
+  
+    // notice for banquet
+  if (command === "bo") {
+    message.channel.send(
+      new Discord.Attachment("./Images/bo.jpg", "bo.jpg")
+    );
+    message.channel
+      .send("@everyone A New Banquet is now Open!")
+      .catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+
+  // notice for academy
+  if (command === "ao") {
+    message.channel.send(
+      new Discord.Attachment("./Images/academy.png", "academy.png")
+    );
+    message.channel
+      .send("@everyone A New Academy is now Open!")
+      .catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+
+ // notice for construction completion
+  if (command === "ht") {
+    message.channel.send(
+      new Discord.Attachment("./Images/ht.jpg", "ht.jpg")
+    );
+    message.channel
+      .send("<@&527578227582042113> Construction Complete on Hanging Temple !")
+      .catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+
+  if (command === "ct") {
+    message.channel.send(
+      new Discord.Attachment("./Images/ct.jpg", "ct.jpg")
+    );
+    message.channel
+      .send("<@&527578227582042113> Construction Complete on Confucian temple !")
+      .catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+  
+   if (command === "tpok") {
+    message.channel.send(
+      new Discord.Attachment("./Images/tpok.jpg", "tpok.jpg")
+    );
+    message.channel
+      .send("<@&527578227582042113> Construction Complete on The prefect of kaifeng!")
+      .catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+  
+     if (command === "wf") {
+    message.channel.send(
+      new Discord.Attachment("./Images/wf.jpg", "wf.jpg")
+    );
+    message.channel
+      .send("<@&527578227582042113> Construction Complete on Weiyuan fort!")
+      .catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+  
+    if (command === "yt") {
+    message.channel.send(
+      new Discord.Attachment("./Images/yt.jpg", "yt.jpg")
+    );
+    message.channel
+      .send("<@&527578227582042113> Construction Complete on Yueyang tower !")
+      .catch(console.error);
+     message.delete().catch(O_o => {});
+  }
+  
+  
+     //   .addField("Construction relic", ":")
+      
+       
+      //  .addField("2", "Yanmen pass=5,000,000,000(5b)", true)
+      //  .addField("3", "The great wall=120,000,000,000(120b)", true)
+ 
+       
+      //  .addField("3", "Temple of heaven=60,000,000,000(60b)", true)
+    
+      //  .addField("1", "Leshan Giant budda=3,000,000,000(3b)", true)
+       
+     //   .addField("3", "The forbbiden city=60,000,000,000(60b)", true)
+
+        
+      //  .addField("2", "Old summer palace=3,000,000,000(3b)", true)
+      //  .addField("3", "Chengde mountain=3,000,000,000(3b)", true)
+    
+
+
+
+
+  // start of experimental code to get intel data from google drive and post to channel
+
+  if (command === "retreiveintel") {
+    //message.channel.send(new Discord.Attachment("https://docs.google.com/spreadsheets/d/1TQ7IBw9r6f7gHb6-l_pdnIR0WHGVX1Qcev752YkvVtQ/edit#gid=918654765", "https://docs.google.com/spreadsheets/d/1TQ7IBw9r6f7gHb6-l_pdnIR0WHGVX1Qcev752YkvVtQ/edit#gid=918654765"))
+
+    // un comment to direct message to specific channel
+    //  client.channels.get(channelID).send('My Message');
+    message.channel
+      .send(
+        "Retreiving Intimacy Intel Data Report ... https://docs.google.com/spreadsheets/d/1TQ7IBw9r6f7gHb6-l_pdnIR0WHGVX1Qcev752YkvVtQ/edit#gid=918654765"
+      )
+      .catch(console.error);
+   message.delete().catch(O_o => {});
+  }
+  // send intel data form
+
+  if (command === "getintel") {
+    // message.channel.send(new Discord.Attachment("https://forms.gle/baFEAU8nqwxVYf41A", "https://forms.gle/baFEAU8nqwxVYf41A"))
+    message.channel
+      .send(
+        "@everyone Please take a moment to Update your intimacy items in the form. here https://forms.gle/baFEAU8nqwxVYf41A"
+      )
+      .catch(console.error);
+   message.delete().catch(O_o => {});
+  }
   //********************************START OF SOPS*******************************************
   //banquet sop
-  if (command === "ban") {
+  if (command === "bansop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -225,7 +367,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   //Start of code for general_info
-  if (command === "g1") {
+  if (command === "g1sop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -257,7 +399,7 @@ client.on("message", async message => {
     );
     message.delete().catch(O_o => {});
   }
-  if (command === "g2") {
+  if (command === "g2sop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -305,7 +447,7 @@ client.on("message", async message => {
     );
     message.delete().catch(O_o => {});
   }
-  if (command === "g3") {
+  if (command === "g3sop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -332,7 +474,7 @@ client.on("message", async message => {
     );
     message.delete().catch(O_o => {});
   }
-  if (command === "g4") {
+  if (command === "g4sop") {
     message.author.send(
       new Discord.RichEmbed()
         .setTitle(`General_Information`)
@@ -351,7 +493,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   //Members & Staff
-  if (command === "members") {
+  if (command === "memberssop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -408,7 +550,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   //AWOL & LOA SOP
-  if (command === "awol") {
+  if (command === "awolsop") {
     message.delete().catch(O_o => {});
     message.author.send(
       new Discord.RichEmbed()
@@ -450,7 +592,7 @@ client.on("message", async message => {
   }
 
   // Ranking Pay Grade Chart:
-  if (command === "pg") {
+  if (command === "pgsop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -480,7 +622,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   // Royal Tribunal
-  if (command === "rt") {
+  if (command === "rtsop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -509,7 +651,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   // Offspring slots vs. Institution slots SOP
-  if (command === "kids") {
+  if (command === "kidssop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -531,7 +673,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   // Staff Postions and descriptions
-  if (command === "sd") {
+  if (command === "sdsop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -564,7 +706,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   // Zombies
-  if (command === "zombies") {
+  if (command === "zombiessop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -620,7 +762,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   //Construction SOP
-  if (command === "con") {
+  if (command === "consop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -656,7 +798,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   // Personel Activity SOP
-  if (command === "pa") {
+  if (command === "pasop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -665,7 +807,7 @@ client.on("message", async message => {
     message.delete().catch(O_o => {});
   }
   // Intel SOP
-  if (command === "intel") {
+  if (command === "intelsop") {
     message.author.send(
       new Discord.RichEmbed()
         .setColor("RANDOM")
@@ -699,6 +841,9 @@ client.on("message", async message => {
 
   //accept into alliance command
   if (command === "usvadd") {
+	  	  if (!message.member.roles.some(r => ["Commanders"].includes(r.name))) //test
+      return message.reply("Sorry, you don't have permissions to use this!");
+	  
     if (message.channel.type === "dm")
       console.log(`[${message.author.username}] ${message.content}`);
     let memberai = message.mentions.members.first();
@@ -719,6 +864,7 @@ client.on("message", async message => {
 
       //        .settimestamp()
     );
+
     message.delete().catch(O_o => {});
 
     memberai
@@ -731,7 +877,7 @@ client.on("message", async message => {
 
     memberai
       //these are the roles for enlisted and pvt(e1)
-      .setRoles(["632003707894104065", "632003520131891200"])
+      .setRoles(["526656925258219528", "527578749827547190"]) // need role IDs for Usvets roles. 526656925258219528 pvte1 527578749827547190 enlisted
       .then(console.log)
       .catch(console.error);
   }
@@ -749,21 +895,38 @@ client.on("message", async message => {
   }
   // Commanders Text Via BOT
   if (command === "usvsay") {
+	  	  if (!message.member.roles.some(r => ["Commanders"].includes(r.name)))
+      return message.reply("Sorry, you don't have permissions to use this!");
+	  
     const sayMessage = args.join(" ");
-    const channel = client.channels.get("637686319711256586");
+    //  const channel = client.channels.get("515387841421901837"); // drill hall channel id
     message.channel.send(
-      " Attention! The following is an Official Message from Command."
+      " @everyone Attention! The following is an Official Message from Command."
     );
     message.channel.send(sayMessage);
     message.delete().catch(O_o => {});
   }
 
+ // bot update
+  if (command === "Botupdate") {
+	  if (!message.member.roles.some(r => ["Commanders"].includes(r.name)))
+      return message.reply("Sorry, you don't have permissions to use this!");
+  
+    const sayMessage = args.join(" ");
+    //  const channel = client.channels.get("515387841421901837"); // drill hall channel id
+    message.channel.send(
+      " @everyone The Bot Has Been Updated."
+    );
+    message.channel.send(sayMessage);
+    message.delete().catch(O_o => {});
+  }
+
+
+
   // kick member
   if (command === "usvkick") {
     if (
-      !message.member.roles.some(r =>
-        ["Administrator", "Moderator"].includes(r.name)
-      )
+      !message.member.roles.some(r => ["Admin", "Moderator"].includes(r.name))
     )
       return message.reply("Sorry, you don't have permissions to use this!");
 
@@ -794,7 +957,7 @@ client.on("message", async message => {
   }
   //ban member
   if (command === "usvban") {
-    if (!message.member.roles.some(r => ["Administrator"].includes(r.name)))
+    if (!message.member.roles.some(r => ["Admin"].includes(r.name)))
       return message.reply("Sorry, you don't have permissions to use this!");
 
     let member = message.mentions.members.first();

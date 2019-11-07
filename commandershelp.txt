@@ -1,0 +1,107 @@
+Officers.
+first i want to say i tried to make this easier on everyone time is a percious commodity and that being said if there is a feature you would like to see pm me and i will add it to the list of future updates found below.
+
+the help section for officer commands is  !commandershelp issue this command only in an officer channel
+
+
+as some of these require admin commands they will be strictly under lock and key.  i will list in detail how they work.
+
+first the source code is maintained privately on github. the server is hosted at glitch.com. this is a nodejs server and uses uptime monitor to track when the bot goes down.  in the event that the bot does go down i have a webhook into the intel channel that will post a message to the intel channel when the bot is down. in the event the bot goes down, its status will go offline and i will be able to review the server logs on why it went down and should be able to fix it quickly.
+ 
+
+commands for officers only
+_____________________________
+
+
+!usvsay ------- This command will allow you to appear as though you are speaking as the server bot. this would Primarily be used as the voice of the commander when official info must be put out.
+                to use this command go to the channel, then type "!usvsay whatever the message is" minus the quotation marks. the bot will do the rest.
+
+!latencyping ------- This will ping the server to check the latency(if you have no idea what this is dont use it.) its primary creation was to check if the server is slow or down.
+
+!usvkick ------- This Kicks a player from the server. This is a restricted command for administrators and moderators only. to use this  simply type "!usvkick @(select player name) then the reason they are kicked." so it would look like this !usvkick @Tango71#0001 violation of some rule. if they have the link they will be placed back in the recruiting stripped of all rank. until senior command speaks to them.
+
+!usvban -------- This command bans a member(must be a server admin to use) this is used exactly like the kick command.
+
+!usvd ------- deletes messages in the channel up to 100 must be less than 14 days old. this will bulk delete up to 100 messages. its use, go into the channel where you wish to delete the info and type "!usvd 10" and this will delete last 10 posts by any user. change the number to 20, 30, 40 up to 100. there is no undelete! once its gone its gone.
+
+!usvadd ------- This is the command for recruiting to welcome the new member into the server once they are approved. to use this type !usvadd @PVT and select there name from the list once you press enter they are automatically sent a personal welcome letter and will be announced to everyone welcoming them in. once they are in you will change their name normally (until i can figure out the routine to automate it.) 
+
+!getintel ------- this will send the intimacy intel form to the channel, I recommend using this in the drill hall channel
+
+!retreiveintel ------- This command will pull up the Intimacy report page of the spreadsheet ****** DONT EDIT ANYTHING ******* if any edits are made it could break the sheet.
+
+
+in future updates
+---------------------------------------------------------------------------------------------------------------------------
+backup routine ---  to backup channels data for use at a later time.( may require a seperate bot)
+Daily reports ---  this will be standard templates that will be chosen when you submit the report daily.
+power race info
+enemy list to include stats from spreadsheet.
+friendlist
+trophy room
+statistics info on win loss record ranking by event ect
+fix code to lockout enlisted from using officer commands. (80% complete)
+
+----------------------------------------------------------------------------------------------------------------------------
+complete general command list as of 11/04/2019
+
+command						what it does								   example
+----------------------|-------------------------------|----------------------------
+!help	     	      |    brings up this document    | 					 !help
+
+---------------------------zombies up----------------------------------------------
+!z1u					anounces z1 is available							 !z1u
+!z2u					anounces z2 is available	 						 !z2u
+!z3u					anounces z3 is available	  						 !z3u
+!z4u					anounces z4 is available	  						 !z4u
+!z5u					anounces z5 is available	  						 !z5u
+!z6u					anounces z6 is available	  						 !z6u
+!z7u					anounces z7 is available							 !z7u
+!z8u					anounces z8 is available	  						 !z8u
+
+---------------------------zombies down--------------------------------------------
+
+!z1d					anounces that z1 is dead	 						 !z1d
+!z2d					anounces that z2 is dead	  						 !z2d
+!z3d					anounces that z3 is dead	 						 !z3d
+!z4d					anounces that z4 is dead	 						 !z4d
+!z5d					anounces that z5 is dead	 						 !z5d
+!z6d					anounces that z6 is dead	 						 !z6d
+!z7d					anounces that z7 is dead	 						 !z7d
+!z8d					anounces that z8 is dead	 						 !z8d
+
+---------------------------misc commands-------------------------------------------
+
+!bo						anounces banquet open		 						 !bo
+!ao						anounces academy open		 						 !ao
+
+---------------------------Construction--------------------------------------------
+!ht						anounces completion of Hanging Temple			     !ht
+!ct						anounces completion of Confucian temple				 !ct
+!tpok					anounces completion of The prefect of kaifeng		 !tpok
+!wf						anounces completion of Weiyuan fort					 !wf
+!yt						anounces completion of Yueyang tower				 !yt
+
+rest are in progress
+
+
+----------------------------Standard operating Procedures--------------------------
+!bansop					retreives the banquet sop							 !bansop
+!g1sop					retreives the general information sop				 !g1sop
+!g2sop					continuation 										 !g2sop
+!g3sop					continuation										 !g3sop
+!g4sop					continuation										 !g4sop
+!memberssop				retreives the members and staff sop					 !memberssop
+!awolsop				retreives the awol and loa sop						 !awolsop
+!pgsop					retreives the ranking paygrade sop					 !pgsop
+!rtsop					retreives the royal tribunal sop					 !rtsop
+!kidssop				retreives the offspring sop							 !kidssop
+!sdsop					retreives the staff positions and duties sop		 !sdsop
+!zombiessop				retreives the zombies sop							 !zombiessop
+!consop					retreives the construction sop						 !consop
+!pasop					retreives the Personel Activity SOP					 !pasop
+
+
+
+
+as with anything related to the bots performance please let me know if something is incorrect or needs updating.
