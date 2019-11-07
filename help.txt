@@ -1,0 +1,94 @@
+
+
+
+Welcome everyone to the new USVets standard operating Bot. SOB.
+FOUO
+This bot is Specifically for USVets information. 
+
+All bot commands are logged.(DDDS)
+
+as a member, you are only authorized to use the commands listed in the !help area.
+anyone caught using a command that they are not authorized to use will need to explain to CJ Or Adda why the command was used without authorization.
+
+The SOB contains a list of all the SOP's, as well as game status images.
+
+a list of commands can be found by typing !help
+
+as the bot is still new. please let Tango71 know if there is an error. and it will get fixed.
+
+this bot is up 24/7 
+If for some reason the bot commands are not working, please inform @commanders to check the bot status in the #Intel channel.
+
+once you give the !help command the bot will send you a PM with the info you requested. you can run all sop commands from that PM.
+
+zombie kill of the day will need to be run from within the #drill-hall channel by typing !z8d or !z7d thru z1d. this will automatically inform commanders
+
+Academy Up status can also be issued by typing !ao the bot will automatically send it to everyone.
+the complete list of commands can be found below.
+
+
+If you would like to see something added that could simplify processes speak up.
+
+
+Updated list of commands as of 11/4/2019
+
+
+command						what it does									example
+----------------------|-------------------------------|-----------------------------------
+!help	     	      |    brings up this document    | 					 !help
+
+---------------------------zombies up----------------------------------------------
+!z1u					anounces z1 is available							 !z1u
+!z2u					anounces z2 is available	 						 !z2u
+!z3u					anounces z3 is available	  						 !z3u
+!z4u					anounces z4 is available	  						 !z4u
+!z5u					anounces z5 is available	  						 !z5u
+!z6u					anounces z6 is available	  						 !z6u
+!z7u					anounces z7 is available							 !z7u
+!z8u					anounces z8 is available	  						 !z8u
+
+---------------------------zombies down--------------------------------------------
+
+!z1d					anounces that z1 is dead	 						 !z1d
+!z2d					anounces that z2 is dead	  						 !z2d
+!z3d					anounces that z3 is dead	 						 !z3d
+!z4d					anounces that z4 is dead	 						 !z4d
+!z5d					anounces that z5 is dead	 						 !z5d
+!z6d					anounces that z6 is dead	 						 !z6d
+!z7d					anounces that z7 is dead	 						 !z7d
+!z8d					anounces that z8 is dead	 						 !z8d
+
+---------------------------misc commands-------------------------------------------
+
+!bo						anounces banquet open		 						 !bo
+!ao						anounces academy open		 						 !ao
+
+---------------------------Construction--------------------------------------------
+!ht						anounces completion of Hanging Temple			     !ht
+!ct						anounces completion of Confucian temple				 !ct
+!tpok					anounces completion of The prefect of kaifeng		 !tpok
+!wf						anounces completion of Weiyuan fort					 !wf
+!yt						anounces completion of Yueyang tower				 !yt
+
+rest are in progress
+
+
+----------------------------Standard operating Procedures--------------------------
+!bansop					retreives the banquet sop							 !bansop
+!g1sop					retreives the general information sop				 !g1sop
+!g2sop					continuation 										 !g2sop
+!g3sop					continuation										 !g3sop
+!g4sop					continuation										 !g4sop
+!memberssop				retreives the members and staff sop					 !memberssop
+!awolsop				retreives the awol and loa sop						 !awolsop
+!pgsop					retreives the ranking paygrade sop					 !pgsop
+!rtsop					retreives the royal tribunal sop					 !rtsop
+!kidssop				retreives the offspring sop							 !kidssop
+!sdsop					retreives the staff positions and duties sop		 !sdsop
+!zombiessop				retreives the zombies sop							 !zombiessop
+!consop					retreives the construction sop						 !consop
+!pasop					retreives the Personel Activity SOP					 !pasop
+
+
+
+

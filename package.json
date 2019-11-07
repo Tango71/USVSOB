@@ -3,9 +3,12 @@
   "version": "1.0.10",
   "description": "",
   "main": "SOB.js",
+   
   "scripts": {
     "start": "node SOB.js"
+   
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sgtstartpushin/USVets-Standard-Operations-Bot.git"
